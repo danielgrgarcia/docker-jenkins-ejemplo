@@ -5,4 +5,7 @@
   <artifactId>docker-jenkins-ejemplo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+	<build>
+		<finalName>docker-jenkins-ejemplo</finalName>
+	</build>
 </project>
