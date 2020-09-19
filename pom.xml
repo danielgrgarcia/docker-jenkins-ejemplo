@@ -8,24 +8,22 @@
 	<build>
 		<finalName>docker-jenkins-ejemplo</finalName>
 		
-		 <plugins>
-		    <plugin>
-		      <!-- Build an executable JAR -->
-		      <groupId>com.sample</groupId>
-		      <artifactId>docker-jenkins-ejemplo</artifactId>
-		      <version>0.0.1-SNAPSHOT</version>
-		      <configuration>
-		        <archive>
-		          <manifest>
-		            <addClasspath>true</addClasspath>
-		            <classpathPrefix>lib/</classpathPrefix>
-		            <mainClass>com.sample.api.Test</mainClass>
-		          </manifest>
-		        </archive>
-		      </configuration>
-		    </plugin>
-		  </plugins>
-	</build>
+		<plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>com.sample.api.Test</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+   </build>     
 	
 	
 </project>
